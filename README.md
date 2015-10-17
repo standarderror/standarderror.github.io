@@ -1,3 +1,3 @@
-# The Plain
+standarderror blog 2
 
-A minimalist Jekyll theme, made with passion for simplicity by [Heiswayi Nrird](http://heiswayi.github.io). More details about it [**here**](http://heiswayi.github.io/the-plain.html); theme description, screenshot and demo link.
+based on __The Plain__ Jekyll template by [Heiswayi Nrird](http://heiswayi.github.io).

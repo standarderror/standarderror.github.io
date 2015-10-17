@@ -1,20 +1,20 @@
 # Site Info
-title:              "The Plain"
-description:        "The Plain is a Minimalist Jekyll theme that focuses on writing matters."
-google_verify:      epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o # Put your Google Verification here
+title:              "standarderror"
+description:        "flotsam and jetsam"
+google_verify:      TBC # Put your Google Verification here
 google_analytics:   UA-XXXXXXX-X # Put your Google Analytics code
 
 # Author Info
-author_name:        "Heiswayi Nrird"
-author_email:       hnrird@gmail.com
-author_gravatar:    2b38b1b0e7e08b69379bd61582adf0c8 # Gravatar md5 hash
-twitter_username:   HeiswayiNrird
+author_name:        "Cameron Mence"
+author_email:
+author_gravatar:    487daca72d479be1ef022f91a5456098 # 2b38b1b0e7e08b69379bd61582adf0c8 # Gravatar md5 hash
+twitter_username:   penguinseesaw
 
 # Site Settings
 #baseurl:            "/the-plain" # Base URL must end WITHOUT a slash, default: ""
 baseurl:            ""
 permalink:          /notes/:title # Post permalink
-timezone:           Asia/Kuala_Lumpur
+timezone:           Asia/Melbourne
 
 # Site Build
 highlighter:        pygments

@@ -13,7 +13,7 @@ twitter_username:   penguinseesaw
 # Site Settings
 #baseurl:            "/the-plain" # Base URL must end WITHOUT a slash, default: ""
 baseurl:            ""
-permalink:          #/notes/:title # Post permalink
+permalink:          /notes/:title # Post permalink
 timezone:           Asia/Melbourne
 
 # Site Build

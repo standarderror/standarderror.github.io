@@ -17,8 +17,10 @@ permalink:          /notes/:title # Post permalink
 timezone:           Asia/Melbourne
 
 # Site Build
-#highlighter:        pygments  # CM 20161018
-markdown:           redcarpet
+#highlighter:        pygments   # CM 20161018
+markdown:           redcarpet   # CM 20161018
+redcarpet:                      # CM 20161018
+    extensions:     ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "footnotes"]
 #redcarpet:
 #    extensions:     ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "footnotes"]
 markdown:           kramdown

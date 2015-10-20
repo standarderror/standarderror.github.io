@@ -15,4 +15,6 @@ MathJax.Hub.Config({
 </script>
 ```
 
-Now I can write `$x^2$` and get $x^2$
+Now I can write `$\frac{1}{x^2}$` and get $\frac{1}{x^2}$
+
+[Thank you](http://jwinder.io/blogging-with-jekyll-github-pages-and-supportkit/)

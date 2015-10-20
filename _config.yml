@@ -17,13 +17,14 @@ permalink:          /notes/:title # Post permalink
 timezone:           Asia/Melbourne
 
 # Site Build
-highlighter:        rouge #pygments
+highlighter:        pygments
 #markdown:           redcarpet
 #redcarpet:
 #    extensions:     ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "footnotes"]
 markdown:           kramdown       # CM 20151018
 kramdown:                          # CM 20151018
     input:          GFM            # CM 20151018
+    syntax_highlighter: pygments
 sass:
     style:          :compressed
 

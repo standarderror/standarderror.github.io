@@ -1,9 +1,8 @@
 ---
-title: code post
+title: D3.js example
 updated: 2015-09-09 10:38
 ---
 
-example code 3
 
 ```python
 from library import function

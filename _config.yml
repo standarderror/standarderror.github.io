@@ -18,13 +18,12 @@ timezone:           Asia/Melbourne
 
 # Site Build
 highlighter:        pygments
-#markdown:           redcarpet
-#redcarpet:
-#    extensions:     ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "footnotes"]
-markdown:           kramdown       # CM 20151018
-kramdown:                          # CM 20151018
-    input:          GFM            # CM 20151018
-    syntax_highlighter: pygments
+markdown:           redcarpet
+redcarpet:
+    extensions:     ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "footnotes"]
+#markdown:           kramdown       # CM 20151018
+#kramdown:                          # CM 20151018
+#    input:          GFM            # CM 20151018
 sass:
     style:          :compressed
 

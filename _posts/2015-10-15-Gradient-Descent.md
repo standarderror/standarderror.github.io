@@ -5,9 +5,12 @@ updated: 2015-10-15
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
+<span>$x^2$</span>
+
+
 Gradient descent is a method of searching for model parameters which result in the best fitting model. There are many, many search algorithms, but this one is quick and efficient for many sorts of supervised learning models.
 
-Let's take the simplest of simple regression models for predicting $y$: $\hat{y} = \alpha + \beta x$. Our model has two parameters - $\alpha$, the intecept, and $\beta$, the coefficient for $x$ - and we want to find the values which produce the best fitting regression line.
+Let's take the simplest of simple regression models for predicting <span>$y$</span>: <span>$\hat{y} = \alpha + \beta x$</span>. Our model has two parameters - $\alpha$, the intecept, and $\beta$, the coefficient for $x$ - and we want to find the values which produce the best fitting regression line.
 
 How do we know whether one model fits better than another? We calculate the _error_ or _cost_ of the predictions. For regression models, the most common cost function is mean squared error:
 

@@ -3,9 +3,15 @@ title: Gradient descent
 updated: 2015-10-15
 ---
 
-updated 2
+updated 3
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script>
+MathJax.Hub.Config({
+  tex2jax: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+});
+</script>
 
 <!--
 <script type="text/x-mathjax-config">

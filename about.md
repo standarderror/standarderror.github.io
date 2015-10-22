@@ -6,7 +6,6 @@ title: About
 
 [My other blog about data science](www.subsubroutine.com)
 
-<ul>
 {% if site.linkedin_username %}
   <li>
     <a href="https://au.linkedin.com/in/{{ site.linkedin_username }}">
@@ -14,6 +13,7 @@ title: About
     </a>
   </li>
 {% endif %}
+
 {% if site.twitter_username %}
   <li>
     <a href="https://twitter.com/{{ site.twitter_username }}">

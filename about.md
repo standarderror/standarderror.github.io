@@ -9,13 +9,13 @@ title: About
 <div>
 {% if site.linkedin_username %}
     <a href="https://au.linkedin.com/in/{{ site.linkedin_username }}">
-      <i class="fa fa-linkedin fa-4x"></i>  <!--LinkedIn -->
+      <i class="fa fa-linkedin fa-3x"></i>  <!--LinkedIn -->
     </a>
 {% endif %}
 
 {% if site.twitter_username %}
     <a href="https://twitter.com/{{ site.twitter_username }}">
-      <i class="fa fa-twitter fa-4x"></i>  <!--Twitter -->
+      <i class="fa fa-twitter fa-3x"></i>  <!--Twitter -->
     </a>
 {% endif %}
 {% if site.github_username %}

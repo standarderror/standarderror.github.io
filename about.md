@@ -30,6 +30,7 @@ title: About
 {% endif %}
 <p>
 <p>
+<p>
 {% if site.twitter_username %}
 <div>
     <a href="https://twitter.com/{{ site.twitter_username }}" style="text-decoration:none !important;">

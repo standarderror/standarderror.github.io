@@ -3,19 +3,19 @@ title: About
 ---
 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
- 
+
 <center>
 <a href="http://www.subsubroutine.com">
   <img src="/assets/favicon.png">
 </a>
 <p>
-<div>
 {% if site.linkedin_username %}
+<div>
     <a href="https://au.linkedin.com/in/{{ site.linkedin_username }}">
       <i class="fa fa-linkedin fa-3x"></i>  <!--LinkedIn -->
     </a>
-{% endif %}
 </div>
+{% endif %}
 <p>
 <div>
 {% if site.twitter_username %}

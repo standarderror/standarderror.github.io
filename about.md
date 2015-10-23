@@ -6,9 +6,12 @@ title: About
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 <style type="text/css">
-  .nounderline { text-decoration:none; }
-  a { text-decoration:none; }
-  i { text-decoration:none; }
+  a,
+  a img {
+      Text-decoration: none;
+      outline: none;
+      border: 0px none transparent;
+  }
 </style>
 </head>
 

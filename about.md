@@ -2,8 +2,15 @@
 title: About
 ---
 
+<head>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
+<style type="text/css">
+  .nounderline { text-decoration:none !important; }
+</style>
+</head>
+
+<body>
 <center>
 <a href="http://www.subsubroutine.com" style="text-decoration:none !important;">
   <img src="/assets/favicon.png">
@@ -11,7 +18,7 @@ title: About
 <p>
 {% if site.linkedin_username %}
 <div>
-    <a href="https://au.linkedin.com/in/{{ site.linkedin_username }}" style="text-decoration:none !important;">
+    <a class="nounderline" href="https://au.linkedin.com/in/{{ site.linkedin_username }}" style="text-decoration:none !important;">
       <i class="fa fa-linkedin fa-3x"></i>  <!--LinkedIn -->
     </a>
 </div>
@@ -33,3 +40,4 @@ title: About
 <p>
 </div>
 </center>
+</body>

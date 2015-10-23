@@ -4,21 +4,14 @@ title: About
 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-<!-- turn off underlining of links -->
-<head>
-    <style type="text/css">
-        a {text-decoration: none; }
-    </style>
-</head>
-
 <center>
-<a href="http://www.subsubroutine.com">
+<a href="http://www.subsubroutine.com" style="text-decoration:none">
   <img src="/assets/favicon.png">
 </a>
 <p>
 {% if site.linkedin_username %}
 <div>
-    <a href="https://au.linkedin.com/in/{{ site.linkedin_username }}">
+    <a href="https://au.linkedin.com/in/{{ site.linkedin_username }}" style="text-decoration:none">
       <i class="fa fa-linkedin fa-3x"></i>  <!--LinkedIn -->
     </a>
 </div>
@@ -26,7 +19,7 @@ title: About
 <p>
 {% if site.twitter_username %}
 <div>
-    <a href="https://twitter.com/{{ site.twitter_username }}">
+    <a href="https://twitter.com/{{ site.twitter_username }}" style="text-decoration:none">
       <i class="fa fa-twitter fa-3x"></i>  <!--Twitter -->
     </a>
 </div>

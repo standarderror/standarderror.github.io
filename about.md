@@ -23,4 +23,8 @@ title: About
       <i class="fa fa-github"></i> GitHub
     </a>
 {% endif %}
+
+<a href="http://www.subsubroutine.com">
+  <img src="/assets/favicon.png">
+</a>
 </div>

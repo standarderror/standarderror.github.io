@@ -5,10 +5,10 @@ title: About
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 <center>
-<div>
 <a href="http://www.subsubroutine.com">
   <img src="/assets/favicon.png">
 </a>
+<div>
 <p>
 {% if site.linkedin_username %}
     <a href="https://au.linkedin.com/in/{{ site.linkedin_username }}">

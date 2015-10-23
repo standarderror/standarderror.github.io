@@ -12,7 +12,7 @@ title: About
 
 <body>
 <center>
-<a href="http://www.subsubroutine.com" style="text-decoration:none !important;">
+<a href="http://www.subsubroutine.com" style="text-decoration:none;">
   <img src="/assets/favicon.png">
 </a>
 <p>

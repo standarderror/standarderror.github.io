@@ -21,7 +21,6 @@ title: About
   <img src="/assets/favicon.png">
 </a>
 <p>
-<p>
 {% if site.linkedin_username %}
 <div>
     <a class="nounderline" href="https://au.linkedin.com/in/{{ site.linkedin_username }}" style="text-decoration:none !important;">
@@ -29,6 +28,7 @@ title: About
     </a>
 </div>
 {% endif %}
+<p>
 <p>
 {% if site.twitter_username %}
 <div>

@@ -8,6 +8,7 @@ title: About
 <style type="text/css">
   .nounderline { text-decoration:none; }
   a { text-decoration:none; }
+  i { text-decoration:none; }
 </style>
 </head>
 

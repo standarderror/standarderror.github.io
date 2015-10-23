@@ -4,6 +4,13 @@ title: About
 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
+<!-- turn off underlining of links -->
+<head>
+    <style type="text/css">
+        a {text-decoration: none; }
+    </style>
+</head>
+
 <center>
 <a href="http://www.subsubroutine.com">
   <img src="/assets/favicon.png">

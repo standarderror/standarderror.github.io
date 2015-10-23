@@ -6,6 +6,7 @@ title: About
 
 [My other blog about data science](www.subsubroutine.com)
 
+<div>
 {% if site.linkedin_username %}
     <a href="https://au.linkedin.com/in/{{ site.linkedin_username }}">
       <i class="fa fa-linkedin"></i> fa-4x <!--LinkedIn -->
@@ -22,4 +23,4 @@ title: About
       <i class="fa fa-github"></i> GitHub
     </a>
 {% endif %}
-</ul>
+</div>

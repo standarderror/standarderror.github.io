@@ -17,13 +17,13 @@ title: About
 </div>
 {% endif %}
 <p>
-<div>
 {% if site.twitter_username %}
+<div>
     <a href="https://twitter.com/{{ site.twitter_username }}">
       <i class="fa fa-twitter fa-3x"></i>  <!--Twitter -->
     </a>
-{% endif %}
 </div>
+{% endif %}
 <p>
 {% if site.github_username %}
     <a href="https://github.com/{{ site.github_username }}">

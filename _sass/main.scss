@@ -134,12 +134,12 @@ span[data-note] {
     &:focus {
       background: #f14e32;
     }
-    &:hover + .logo-prompt,
+/*    &:hover + .logo-prompt,
     &:focus + .logo-prompt {
       display: inline-block !important;
-    }
+    }   */  /* CM REMOVE */
     .gravatar {
-      margin-top: 5px; 
+      margin-top: 5px;
       -webkit-border-radius: 50%;  /* 50% */
       -moz-border-radius: 50%;  /* 50% */
       border-radius: 50%; /* 50% */

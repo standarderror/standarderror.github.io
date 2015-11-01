@@ -3,8 +3,6 @@ title: Plotting data in PySpark
 updated: 2015-11-01
 ---
 
-For blog
-
 PySpark doesn't have any plotting functionality (yet). If you want to plot something, you can bring the data out of the Spark Context and into your "local" Python session, where you can deal with it using any of Python's many plotting libraries.
 
 Note that if you're on a cluster:

@@ -140,7 +140,7 @@ span[data-note] {
     }
     .gravatar {
 /*      margin-top: 5px;  */
-      margin: 10px;  
+      border: 5px solid transparent; /* CM */
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%;

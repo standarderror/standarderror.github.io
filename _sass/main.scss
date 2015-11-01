@@ -139,12 +139,11 @@ span[data-note] {
       display: inline-block !important;
     }
     .gravatar {
-      margin-top: 5px;
-      padding: 10px;
+/*      margin-top: 5px; */
       border: 5px solid transparent; /* CM */
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      border-radius: 50%;
+      -webkit-border-radius: 90%;  /* 50% */
+      -moz-border-radius: 90%;  /* 50% */
+      border-radius: 90%; /* 50% */
     }
     @media (max-width : 480px) {&:hover + .logo-prompt,
       &:focus + .logo-prompt {

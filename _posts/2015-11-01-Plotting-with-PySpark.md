@@ -29,7 +29,7 @@ pdf = df.toPandas()
 from pandas.tools.plotting import scatter_matrix
 stuff = scatter_matrix(pdf, alpha=0.7, figsize=(6, 6), diagonal='kde', color=pdf.col)
 ```
-![](../assets/2015-11-01-scatter.png)
+![]({{ site.url }}/assets/2015-11-01-scatter.png)
 
 
 If you have only a Spark RDD then we can still take the data local - into, for example, a vector - and plot with, say, Matplotlib.
@@ -47,4 +47,4 @@ num_bins = 50
 n, bins, patches = plt.hist(rdd.collect(), num_bins, normed=1, facecolor='green', alpha=0.5)
 ```
 
-![](../assets/2015-11-01-histogram.png)
+![]({{ site.baseurl}}/assets/2015-11-01-histogram.png)

@@ -8,6 +8,14 @@ updated: 2015-11-03
 _This page is developing_
 
 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
+
 | |Python pandas| PySpark RDD | PySpark DF | R dplyr | Revo R dplyrXdf|
 |-|:-----------:|:-----------:|:----------:|:-------:|:--------------:|
 |subset columns|||`df.select('col1','col2',...)`|`select(df, col1, col2, ...)`||
@@ -158,6 +166,7 @@ Further resources
 [Copy in examples](https://gist.github.com/standarderror/f7c2ae19fdbbb01b59ff#file-r-code-library-r)
 
 The 5 verbs:
+
 * select = subset columns
 * mutate = new cols
 * filter = subset rows
@@ -184,6 +193,7 @@ hflights %>%
 ```
 
 Additional functions in dplyr
+
 * first(x) - The first element of vector x.
 * last(x) - The last element of vector x.
 * nth(x, n) - The nth element of vector x.

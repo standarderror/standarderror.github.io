@@ -234,7 +234,8 @@ table {
 /*  width: 100%;
   table-layout: fixed;
   margin: 45px 0;  */ /* CM */
-  margin: 0 auto; /* CM */
+  margin-left: auto; /* CM */
+  margin-right: auto; /* CM */
   thead {
     background: #f2f2f2;
   }

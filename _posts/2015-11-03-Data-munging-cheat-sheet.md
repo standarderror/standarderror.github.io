@@ -11,11 +11,11 @@ _This page is developing_
 
 |  | Python pandas | PySpark RDD | PySpark DF | R dplyr | Revo R dplyrXdf |
 | ---- |:-----------:|:-----------:|:----------:|:-------:|:--------------:|
-|subset columns|||`df.select('col1','col2',...)`|`select(df, col1, col2, ...)`||
+|subset columns|||`df.select('col1', 'col2', ...)`|`select(df, col1, col2, ...)`||
 |new columns|``|`rdd.map(function)`||`mutate(df, col1=col2+col3, col4=col5^2,...)`||
 |subset rows||`rdd.filter(function or boolean vector)`, `rdd.subtract()`||`filter`||
 |order rows|||`df.sort('col1')`|`arrange`||
-|group & aggregate|`df.sum(axis=0)`|`rdd.count()`, `rdd.countByValue()`, `rdd.reduce()`, `rdd.reduceByKey()`, `rdd.aggregate()`|`df.groupBy('col1','col2')`|`group_by(df, var1, var2,...) %>% summarise(col=func(var3), col2=func(var4),...)`|`rxSummary(formula,df)` <br> or <br> `group_by() %>% summarise()` |
+|group & aggregate|`df.sum(axis=0)`|`rdd.count()`, `rdd.countByValue()`, `rdd.reduce()`, `rdd.reduceByKey()`, `rdd.aggregate()`|`df.groupBy('col1', 'col2')`|`group_by(df, var1, var2,...) %>% summarise(col=func(var3), col2=func(var4), ...)`|`rxSummary(formula, df)` <br> or <br> `group_by() %>% summarise()` |
 |peek at data|`df.head()`|`rdd.take(5)`|`df.show(5)`|||
 |quick statistics||||`summary()`|`rxGetVarInfo()`|
 |schema or structure|||`df.printSchema()`||||

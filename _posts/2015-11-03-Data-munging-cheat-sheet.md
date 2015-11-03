@@ -15,6 +15,13 @@ _This page is developing_
 | zebra stripes | are neat      |    $1 |
 
 
+| Tables        | Are           | Cool and a long name  |
+|----------------|:-------------:|:---------:|
+| col 3 is      | right-aligned | $1600000 |
+| col 2 is    | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
 
 | f | a | v | d | e | f |
 | -- | -- | -- | -- | -- | -- |

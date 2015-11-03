@@ -238,7 +238,7 @@ table {
   /* Doesn't work */
   margin-left: auto;
   margin-right: auto;
-  position:absolute;  /* don't use fixed = floats */
+  position: absolute;  /* don't use fixed = floats */
   table-layout: fixed;
   width:1000px;
   thead {

@@ -8,26 +8,6 @@ updated: 2015-11-03
 _This page is developing_
 
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-
-| Tables        | Are           | Cool and a long name  |
-|----------------|:-------------:|:---------:|
-| col 3 is      | right-aligned | $1600000 |
-| col 2 is    | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-
-
-| f | a | v | d | e | f |
-| -- | -- | -- | -- | -- | -- |
-| a | b | c | d | e | f |
-
-
 
 | f | Python pandas | PySpark RDD | PySpark DF | R dplyr | Revo R dplyrXdf |
 | ---- |:-----------:|:-----------:|:----------:|:-------:|:--------------:|

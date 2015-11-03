@@ -17,6 +17,12 @@ _This page is developing_
 
 
 | f | Python pandas | PySpark RDD | PySpark DF | R dplyr | Revo R dplyrXdf |
+| - |:-------------:|:-----------:|:----------:|:-------:|:---------------:|
+| subset columns | | | `df.select('col1','col2',...)` | `select(df, col1, col2, ...)` | |
+
+
+
+| f | Python pandas | PySpark RDD | PySpark DF | R dplyr | Revo R dplyrXdf |
 | - |:-----------:|:-----------:|:----------:|:-------:|:--------------:|
 |subset columns|||`df.select('col1','col2',...)`|`select(df, col1, col2, ...)`||
 |new columns|``|`rdd.map(function)`||`mutate(df, col1=col2+col3, col4=col5^2,...)`||

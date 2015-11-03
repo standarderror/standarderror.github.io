@@ -19,6 +19,7 @@ _This page is developing_
 |peek at data|`df.head()`|`rdd.take(5)`|`df.show(5)`|||
 |quick statistics||||`summary()`|`rxGetVarInfo()`|
 |schema or structure|||`df.printSchema()`||||
+
 ...and there's always SQL
 
 

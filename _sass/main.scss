@@ -236,9 +236,9 @@ table {
   table-layout: fixed;
   margin: 45px 0;  */ /* CM */
   /* Doesn't work */
-  margin-left: auto;
+  margin-left: -22px; /* auto; */
   margin-right: auto;
-  position: absolute;  /* don't use fixed = floats */
+  position: relative;  /* don't use fixed = floats, absolute sits over top */
   table-layout: fixed;
   width:1000px;
   thead {

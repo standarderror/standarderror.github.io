@@ -244,7 +244,7 @@ table {
   width:1000px; */
 
   /* This is OK for auto */
-  margin-left: -100px;
+  margin-left: -200px;
   position: relative;
   table-layout: auto;
 
@@ -260,6 +260,7 @@ table {
 /*    padding: 4px 0;  CM */
     padding-left: 5px;
     padding-right: 5px;
+    border: 1px solid gray; /* CM */
   }
 }
 iframe {

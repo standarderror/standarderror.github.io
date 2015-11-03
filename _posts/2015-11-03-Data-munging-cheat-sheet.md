@@ -7,6 +7,7 @@ updated: 2015-11-03
 
 _This page is developing_
 
+
 | |Python pandas| PySpark RDD | PySpark DF | R dplyr | Revo R dplyrXdf|
 |-|:-----------:|:-----------:|:----------:|:-------:|:--------------:|
 |subset columns|||`df.select('col1','col2',...)`|`select(df, col1, col2, ...)`||
@@ -45,11 +46,13 @@ do z
 __RDDs__
 
 Transformations return pointers to new RDDs
+
 * map, flatmap: flexible,
 * reduceByKey
 * filter
 
 Actions return values
+
 * collect
 * reduce: for cumulative aggregation
 * take, count
@@ -105,6 +108,7 @@ lines = lines.filter(lambda x: x.find('x') != 0)
 
 
 __Additional functions for DataFrames__
+
 ```python
 
 
@@ -191,10 +195,12 @@ Additional functions in dplyr
 #### Revo R dplyrXdf
 
 Notes:
+
 * xdf = "external data frame" or distributed one in Teradata
 * If necessary, transformations can be done using rxDataStep(transforms=list(...))
 
 Manipulation with dplyrXdf can use:
+
 * filter, select, distinct, transmute, mutate, arrange, rename,
 * group_by, summarise, do
 * left_join, right_join, full_join, inner_join

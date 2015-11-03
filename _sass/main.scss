@@ -260,8 +260,9 @@ table {
 /*    padding: 4px 0;  CM */
     padding-left: 5px;
     padding-right: 5px;
-    border: 1px solid gray; /* CM */
+  /*  border: 1px solid gray; /* looks terrible CM */
   }
+  tr:nth-child(even) {background: #fff}  /* CM */
 }
 iframe {
   width: 100%;

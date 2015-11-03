@@ -16,8 +16,8 @@ _This page is developing_
 
 
 
-| f | Python pandas | PySpark RDD | PySpark DF | R dplyr | Revo R dplyrXdf |
-| -- |:-------------:|:-----------:|:----------:|:-------:|:---------------:|
+| f | a | v | d | e | f |
+| -- | -- | -- | -- | -- | -- |
 | a | b | c | d | e | f |
 
 

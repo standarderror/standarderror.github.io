@@ -239,8 +239,8 @@ table {
   margin-left: -250px; /* auto; */
   margin-right: auto;
   position: relative;  /* don't use fixed = floats, absolute sits over top */
-  table-layout: fixed;
-  width:1200px;
+  table-layout: auto;
+/*  width:1000px; */
   thead {
     background: #f2f2f2;
   }

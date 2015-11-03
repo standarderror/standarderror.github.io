@@ -17,8 +17,8 @@ _This page is developing_
 
 
 | f | Python pandas | PySpark RDD | PySpark DF | R dplyr | Revo R dplyrXdf |
-| - |:-------------:|:-----------:|:----------:|:-------:|:---------------:|
-| subset columns | | | `df.select('col1','col2',...)` | `select(df, col1, col2, ...)` | |
+| -- |:-------------:|:-----------:|:----------:|:-------:|:---------------:|
+| a | b | c | d | e | f |
 
 
 

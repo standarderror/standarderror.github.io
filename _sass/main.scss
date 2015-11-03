@@ -235,12 +235,19 @@ table {
 /*  width: 100%;
   table-layout: fixed;
   margin: 45px 0;  */ /* CM */
-  /* Doesn't work */
-  margin-left: -250px; /* auto; */
+
+  /* Use this if you want fixed column widths */
+/* margin-left: -250px;
   margin-right: auto;
-  position: relative;  /* don't use fixed = floats, absolute sits over top */
+  position: relative;
+  table-layout: fixed;
+  width:1000px; */
+
+  /* This is OK for auto */
+  margin-left: -100px;
+  position: relative;
   table-layout: auto;
-/*  width:1000px; */
+
   thead {
     background: #f2f2f2;
   }
@@ -250,7 +257,9 @@ table {
     border-bottom: 15px solid #fff;
   }
   td {
-    padding: 4px 0;
+/*    padding: 4px 0;  CM */
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 iframe {

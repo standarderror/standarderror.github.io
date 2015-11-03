@@ -236,8 +236,8 @@ table {
   margin: 45px 0;  */ /* CM */
   /* Doesn't work */
   margin-left: auto;
-  margin-right: auto;  
-
+  margin-right: auto;
+  position:fixed;
   table-layout: fixed;
   width:1000px;
   thead {

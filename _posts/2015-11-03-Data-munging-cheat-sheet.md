@@ -22,7 +22,7 @@ table {
     padding-left: 5px;
     padding-right: 5px;
   }
-  tr:nth-child(even) {background: #f9f9f9;} 
+  tr:nth-child(even) {background: #f2f2f2;} 
 }
 </style>
 </head>

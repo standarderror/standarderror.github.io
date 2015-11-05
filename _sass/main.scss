@@ -231,22 +231,9 @@ pre {
   }
 }
 table {
-  /* This syntax added to get cheat sheet table working... */
   width: 100%;
   table-layout: fixed;
-  margin: 45px 0;  
-
-  /* Use this if you want fixed column widths */
-/* margin-left: -250px;
-  margin-right: auto;
-  position: relative;
-  table-layout: fixed;
-  width:1000px; */
-
-  /* This is OK for auto
-  margin-left: -175px;
-  position: relative;
-  table-layout: auto; */
+  margin: 45px 0;
 
   thead {
     background: #f2f2f2;
@@ -257,12 +244,8 @@ table {
     border-bottom: 15px solid #fff;
   }
   td {
-/*    padding: 4px 0;  CM */
-    padding-left: 5px;
-    padding-right: 5px;
-  /*  border: 1px solid gray; /* looks terrible CM */
+    padding: 4px 0;
   }
-  tr:nth-child(even) {background: #f2f2f2;}  /* CM */
 }
 iframe {
   width: 100%;

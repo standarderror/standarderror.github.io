@@ -6,7 +6,7 @@ updated: 2015-11-03
 <head>
 <style>
 table {
-  margin-left: -175px;
+  margin-left: -140px;
   position: relative;
   table-layout: auto;
 
@@ -22,7 +22,7 @@ table {
     padding-left: 5px;
     padding-right: 5px;
   }
-  tr:nth-child(even) {background: #f2f2f2;} 
+  tr:nth-child(even) {background: #f2f2f2;}
 }
 </style>
 </head>

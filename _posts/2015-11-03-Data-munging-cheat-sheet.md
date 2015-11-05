@@ -3,6 +3,16 @@ title: Data munging cheat sheet
 updated: 2015-11-03
 ---
 
+<head>
+<style>
+table {
+  margin-left: -1px;
+}
+</style>
+</head>
+
+
+
 ## Basic data munging operations: structured data
 
 _This page is developing_
@@ -11,13 +21,13 @@ _This page is developing_
 
 |  | Python pandas | PySpark RDD | PySpark DF | R dplyr | Revo R dplyrXdf |
 | ---- |:-----------:|:-----------:|:----------:|:-------:|:--------------:|
-|subset columns||`rdd.map()`|`df.select('col1', 'col2', ...)`|`select(df, col1, col2, ...)`||
-|new columns||`rdd.map(function)`||`mutate(df, col1=col2+col3, col4=col5^2,...)`||
-|subset rows||`rdd.filter(function or boolean vector)`, `rdd.subtract()`||`filter`||
-|sample rows|`rdd.sample()`||||
+|subset columns|`df.colname`, `df['colname']`|`rdd.map()`|`df.select('col1', 'col2', ...)`|`select(df, col1, col2, ...)`||
+|new columns|`df['newcolumn']=...`|`rdd.map(function)`|`df.withColumn(“newcol”, content)`|`mutate(df, col1=col2+col3, col4=col5^2,...)`||
+|subset rows|`df[1:10]`, `df.loc['rowname':]`|`rdd.filter(function or boolean vector)`, `rdd.subtract()`||`filter`||
+|sample rows||`rdd.sample()`||||
 |order rows|||`df.sort('col1')`|`arrange`||
-|group & aggregate|`df.sum(axis=0)`|`rdd.count()`, `rdd.countByValue()`, `rdd.reduce()`, `rdd.reduceByKey()`, `rdd.aggregate()`|`df.groupBy('col1', 'col2')`|`group_by(df, var1, var2,...) %>% summarise(col=func(var3), col2=func(var4), ...)`|`rxSummary(formula, df)` <br> or <br> `group_by() %>% summarise()` |
-|peek at data|`df.head()`|`rdd.take(5)`|`df.show(5)`|||
+|group & aggregate|`df.sum(axis=0)`, `df.groupby(['A', 'B']).agg([np.mean, np.std])`|`rdd.count()`, `rdd.countByValue()`, `rdd.reduce()`, `rdd.reduceByKey()`, `rdd.aggregate()`|`df.groupBy('col1', 'col2').count().show()`|`group_by(df, var1, var2,...) %>% summarise(col=func(var3), col2=func(var4), ...)`|`rxSummary(formula, df)` <br> or <br> `group_by() %>% summarise()` |
+|peek at data|`df.head()`|`rdd.take(5)`|`df.show(5)`|`first()`, `last()`||
 |quick statistics|`df.describe()`||`df.describe()`|`summary()`|`rxGetVarInfo()`|
 |schema or structure|||`df.printSchema()`||||
 
@@ -33,18 +43,16 @@ _This page is developing_
 
 #### Python pandas
 
-```python
-from x import y
+* [Pandas slicing and indexing](http://pandas.pydata.org/pandas-docs/stable/indexing.html)
+* [Pandas aggregation](http://pandas.pydata.org/pandas-docs/stable/groupby.html)
 
-do z
+```python
+# TBC
 ```
 
 ---
 
 #### PySpark RDDs & DataFrames
-
-* Remember: you must have a schema to be a df. `toDF()` will attempt to infer a schema using existing datatypes.
-* Most PySpark RDD functions will work on a PySpark DataFrame.
 
 __RDDs__
 
@@ -109,17 +117,21 @@ lines = lines.filter(lambda x: x.find('x') != 0)
 
 ```
 
+Partitions: `rdd.getNumPartitions()`, `sc.parallelize(data, 500)`, `sc.textFile('file.csv', 500)`, `rdd.repartition(500)`
+
+
 
 __Additional functions for DataFrames__
+
+If you want to use an RDD method on a dataframe, you can often `df.rdd.function()`.
+
 
 ```python
 
 
 ```
 
-other slicing methods|||`df.colname`,`df.row[i]`||||
-
-Some examples of chained data munging in PySpark:
+Miscellaneous examples of chained data munging:
 
 ```python
 
@@ -153,6 +165,9 @@ Further resources
 * Spark programming guide (latest)
 * Spark programming guide (1.3)
 * [Introduction to Spark](http://researchcomputing.github.io/meetup_spring_2014/python/spark.html) illustrates how python functions like map & reduce work and how they translate into Spark, plus may data munging examples in Pandas and then Spark
+
+
+
 
 
 ---
@@ -202,8 +217,8 @@ Additional functions in dplyr
 
 Notes:
 
-* xdf = "external data frame" or distributed one in Teradata
-* If necessary, transformations can be done using rxDataStep(transforms=list(...))
+* xdf = "external dataframe" or distributed one in, say, a Teradata database
+* If necessary, transformations can be done using `rxDataStep(transforms=list(...))`
 
 Manipulation with dplyrXdf can use:
 

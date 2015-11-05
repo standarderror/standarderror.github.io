@@ -6,7 +6,23 @@ updated: 2015-11-03
 <head>
 <style>
 table {
-  margin-left: -1px;
+  margin-left: -175px;
+  position: relative;
+  table-layout: auto;
+
+  thead {
+    background: #f2f2f2;
+  }
+  th {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 15px solid #fff;
+  }
+  td {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  tr:nth-child(even) {background: #f2f2f2;}  
 }
 </style>
 </head>

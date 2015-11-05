@@ -232,9 +232,9 @@ pre {
 }
 table {
   /* This syntax added to get cheat sheet table working... */
-/*  width: 100%;
+  width: 100%;
   table-layout: fixed;
-  margin: 45px 0;  */ /* CM */
+  margin: 45px 0;  
 
   /* Use this if you want fixed column widths */
 /* margin-left: -250px;
@@ -243,10 +243,10 @@ table {
   table-layout: fixed;
   width:1000px; */
 
-  /* This is OK for auto */
+  /* This is OK for auto
   margin-left: -175px;
   position: relative;
-  table-layout: auto;
+  table-layout: auto; */
 
   thead {
     background: #f2f2f2;

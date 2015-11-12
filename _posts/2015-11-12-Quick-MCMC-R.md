@@ -30,14 +30,12 @@ plot(res, type="l", col="dark red")
 IRL, you'd want to convert to log-likelihood to avoid potential numeric underflow.
 
 
-Here's a worked example with two unknown parameters. Say we have a sample $X$ that we suspect is drawn from a normal distribution: $X \tilde{} N(\mu, \sigma^2)$
-
-$\mu$ and $\sigma$ are unknown. Let's assume uninformed but also Gaussian priors:
+Here's a worked example with two unknown parameters. Say we have a sample $X$ that we suspect is drawn from a normal distribution: $X \tilde{} N(\mu, \sigma^2)$. So, $\mu$ and $\sigma$ are unknown random variables. Let's assume uninformed Gaussian priors:
 
 * $\mu \tilde{} N(0,10^2)$
 * $\sigma \tilde{} N(0,10^2)$
 
-Now let's generate some random data and do MCMC on it:
+Now let's specify the likelihood function, then the MCMC sampling code, and finally generate some random data and do MCMC on it:
 
 ```R
 # log-likelihood function
@@ -101,12 +99,12 @@ mcmcevd<- function(nn, init, std, mdata, burn) {
 
     theta[1]<-simmat[(i+1),1]
 
-    ## Third parameter: scale
-    # this is special: cannot have negative value
-    # We take value from LOG-NORMAL
+    ## sigma
+    # this is special: cannot have negative value,
+    # so we draw from LOG-NORMAL.
     # This is not a symmetric distribuiton
     # so we need special non-symmetric component in accept/reject
-#    logposterior.old<-llikelihood.old+dnorm(theta[2], sd=10, log=TRUE) #Prior and logLikelihood
+
     sigma.old<-theta[2]
     sigma.new<-exp(rnorm(1,log(sigma.old),std[2]))  #Simulating a value from a lognormal distribution
     theta[2]<-sigma.new
@@ -163,7 +161,8 @@ mean(temp[,2])
 Notice that for sigma we draw samples from the log-normal distribution. That's because sigma cannot be negative.
 
 
-There are hyperparameters that must be fiddled with to ensure that the sampling happens correctly, the chain converges, etc.
+There are hyperparameters that must be fiddled with to ensure that the sampling happens correctly, the chain converges, etc.:
+
 * The burn-in period
 * The length of the sample
 * The 'step size' - that is, standard deviation of the distribution used to generate new values. One should aim to get ~50% of steps accepted.

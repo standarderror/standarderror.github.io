@@ -6,4 +6,4 @@ updated: 2015-09-09 10:38
 A javascript - via iframe of bl.ocks.org:
 
 <iframe src="http://bl.ocks.org/standarderror/raw/4cbf70c74747c829e4a6/"
-frameborder="0" marginwidth=100% marginheight=100% scrolling="no"></iframe>
+frameborder="0" marginwidth='200' marginheight='200' scrolling="no"></iframe>
